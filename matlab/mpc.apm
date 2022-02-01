@@ -1,0 +1,24 @@
+Constants
+  ! model parameters from step test
+  tau = 1.5
+  Kp = 0.02
+  Kd = 0.015
+  Ke = 0.35  
+
+  ! initial conditions
+  u0 = 3
+  x0 = 80
+  d0 = 100
+  ex0 = 8
+
+Parameters
+  u = u0  ! insulin injection rate 
+  d = d0  ! disturbance (meal) 
+  ex = ex0 ! disturbance (exercise)
+  
+Variables
+  x = x0  ! blood glucose level
+  
+Equations
+  ! linear, first order equation
+  tau * $x = -(x-x0) + Kp * (u-u0) + Kd * (d-d0) + Kd*(ex-ex0)
