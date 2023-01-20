@@ -24,7 +24,7 @@ git clone https://github.com/EstherMatamoros/CloosedLoopInsulinDelivery.git
 ```
 2. Navigate to the project directory
 ```
-cd insulin-predictor
+cd CloosedLoopInsulinDelivery
 ```
 3. Create a virtual environment and activate it (if using virtualenv)
 ```
